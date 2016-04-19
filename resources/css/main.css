@@ -1,0 +1,372 @@
+@CHARSET "UTF-8";
+
+body {
+	background: rgb(223, 223, 220);
+	margin: 0;
+	font-family: arial;
+	letter-spacing: 0.1em;
+}
+
+#pagetop {
+	width: 100%;
+	height: 700px;
+	background: url("../images/crtwake2560compr.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	top: -80px;
+}
+
+#header {
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	z-index: 100;
+	top: 0;
+}
+
+#header #headname {
+	position: absolute;
+	margin-top: -40px;
+	margin-left: 35px;
+	font-family: arial;
+	font-size: 28px;
+	font-weight: bold;
+}
+a {
+	text-decoration: none;
+	color: #3d6787;
+}
+a:visited {
+	color: #3d6787;
+}
+a:hover {
+	color: white;
+}
+
+#header #headcontact {
+	position: fixed;
+	margin-top: -35px;
+	margin-left: 88%;
+	font-family: arial;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#headlogout {
+	position: absolute;
+	margin-top: -35px;
+	margin-left: 300px;
+	font-family: arial;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#tophead {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background: rgb(223, 223, 220);
+}
+
+#bottomhead {
+	position: fixed;
+	width: 100%;
+	height: 30px;
+	background: -webkit-linear-gradient(bottom, rgba(223, 223, 220, 0),
+		rgba(223, 223, 220, 1));
+	background: -moz-linear-gradient(bottom, rgba(223, 223, 220, 0),
+		rgba(223, 223, 220, 1));
+}
+
+#content {
+	height: 500px;
+	width: 100%;
+}
+
+#menubox {
+	position: relative;
+	top: 240px;
+	margin: 80px auto;
+	width: 600px;
+	height: 300px;
+	border: 1px solid white;
+	border-radius: 25px;
+	background: rgba(223, 223, 220, 0.3);
+	text-align: center;
+}
+
+#button1 {
+	float: left;
+	height: 126px;
+	width: 126px;
+	margin-left: 60px;
+	margin-top: 75px;
+	background: rgba(223, 223, 220, 0.75);
+	border: 2px solid white;
+	border-radius: 100px;
+}
+#button1:hover, #button2:hover, #button3:hover {
+	border: 2px solid rgba(223, 223, 220, 0.75);
+	background: rgba(223, 223, 220, 0.85);
+}
+#button1:active, #button2:active, #button3:active {
+	background: rgba(223, 223, 220, 0.45);
+}
+
+#item1 {
+	/* float:left; */
+	height: 75px;
+	width: 75px;
+	margin-left: 25px;
+	margin-top: 26px;
+	background: url("../images/info3.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#button2 {
+	display: inline-block;
+	height: 126px;
+	width: 126px;
+	margin-top: 75px;
+	background: rgba(223, 223, 220, 0.75);
+	border: 2px solid white;
+	border-radius: 100px;
+}
+
+#item2 {
+	height: 75px;
+	width: 75px;
+	margin-top: 27px;
+	margin-left: 24px;
+	background: url("../images/cv.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#button3 {
+	float: right;
+	height: 126px;
+	width: 126px;
+	margin-right: 60px;
+	margin-top: 75px;
+	background: rgba(223, 223, 220, 0.75);
+	border: 2px solid white;
+	border-radius: 100px;
+}
+
+#item3 {
+	/* float: right; */
+	height: 75px;
+	width: 75px;
+	margin-left: 26px;
+	margin-top: 26px;
+	background: url("../images/camera.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#item1 p, #item2 p, #item3 p {
+	font-size: 185%;
+	margin-top: 40px;
+	font-weight: bold;
+}
+
+#capt1 p:hover, #capt2 p:hover, #capt3 p:hover {
+	color: #052e54;
+	color: rgb(223, 223, 220);
+	text-shadow: 2px 2px 3px black;
+}
+
+#capt1 p, #capt2 p, #capt3 p {
+	font-size: 175%;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+}
+#capt1 {
+	float: left;
+	height: 65px;
+	width: 115px;
+	margin-left: 68px;
+	margin-top: -10px;
+}
+#underline {
+	margin: auto;
+	margin-top: -88px;
+	width: 60%;
+	height: 100%;
+	border-bottom: 4px solid white;
+}
+
+#capt2 {
+	display: inline-block;
+	height: 65px;
+	width: 135px;
+	margin-top: -10px;
+	margin-left: 5px;
+}
+
+#capt3 {
+	float: right;
+	height: 65px;
+	width: 125px;
+	margin-right: 63px;
+	margin-top: -10px;
+}
+
+#pagebottom {
+	margin: -100px 0px;
+	padding-bottom: 40px;
+	width: 100%;
+	height: 100%;
+}
+#latestNews {
+	
+}
+#newsTable {  	/* div for table */
+	margin: 5% auto;
+	width: 80%;
+}
+.news { 		/* the table */
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+	margin: auto;
+}
+.news tr {
+
+}
+.news td {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	padding: 14px;
+	word-wrap: break-word;
+}
+#dateLog {
+	white-space: nowrap;
+	width: 140px;
+}
+
+#about, #contact {
+	padding-top: 40px;
+}
+#editAboutLink, #editContactLink {
+	margin-left: 16%;
+	margin-bottom: -12px;
+	font-size: large;
+}
+#aboutBlock, #contactBlock {
+	margin: 30px auto;
+	text-align: center;
+	width: 65%;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 20px;
+	background: white;	
+}
+#contactBlock {
+	text-align: left;
+}
+#contactText {
+	padding: 5px;
+	padding-left: 25px;
+}
+#aboutTable, #contactTable {
+	margin: 20px 10px;
+}
+#aboutText, #contactText, #logText {
+	white-space: pre-wrap;
+}
+
+#editLogLink {
+	width: 40px;
+}
+#editTitle {
+	text-align: center;
+	margin-top: 2%;
+}
+#editAboutTitle{
+	text-align: center;
+	margin-top: -2%;
+}
+#aboutTitle, #contactTitle {
+	text-align: center;
+	margin-top: 4%;
+}
+#editLogTable, #editAboutTable, #editContactTable {
+	border: 1px solid black;
+	width: auto;
+	height: auto;
+	margin: 2% auto;
+	padding: 40px;	
+}
+#editLogTable td, #editAboutTable td, #editContactTable td {
+	padding: 10px;
+}
+
+.deleteEntry{
+	float: right;
+}
+
+.loginerror {
+	font-size: small;
+	margin-left: 10px;
+	color: red;
+}
+.label {
+	
+}
+
+#createTitle {
+	text-align: center;
+	margin-top: 4%;
+}
+.createLogTable {
+	border: 1px solid black;
+	width: auto;
+	height: auto;
+	margin: 4% auto;
+	padding: 40px;
+}
+
+.createLogTable td {
+	padding: 10px;
+}
+#createDateEntry input, #editDateEntry input {
+	width: 275px;
+	padding: 2px;
+}
+#createTextEntry textarea, #editTextEntry textarea {
+	width: 275px;
+	height: 150px;
+	padding: 2px;
+}
+#createUrlEntry textarea, #editUrlEntry textarea {
+	width: 275px;
+	height: 25px;
+	padding:2px;
+}
+#editAboutEntry textarea {
+	width: 475px;
+	height: 525px;
+	padding: 8px;
+	font-size: medium;
+}
+#editContactTable textarea {
+	width: 225px;
+	height: 25px;
+	padding:2px;
+}
+#editAddressEntry textarea, #editAdditionalEntry textarea {
+	height: 40px;
+}
+
+input[type=text] {
+	width: 250px;
+}
+
+input[type=password] {
+	width: 250px;
+}
